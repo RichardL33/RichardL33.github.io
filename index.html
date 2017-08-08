@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Monk's Cafe</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	
 	<section id="main-section">
 		<h1>Monk's Cafe</h1>
-		<h3>The Coffee Shop</h3>
+		<h3>"The Coffee Shop"</h3>
 
 		<div class="hero-container-1"></div>
 	</section>
@@ -18,7 +19,7 @@
 	<section id="reservation-section">
 		<h2>Reservations</h2>
 
-		<div class="make-reservation">
+		<div class="reservation-container" id="make-reservation">
 			<h3>Make a Reservation</h3>
 			<form>
 			    <input type="text" id="name-input" placeholder="Name">
@@ -27,7 +28,7 @@
 			</form>
 		</div>
 
-		<div class="existing-reservation">
+		<div class="reservation-container" id="existing-reservation">
 			<h3>Existing Reservations</h3>
 			<table>
 				<thead>
@@ -36,8 +37,12 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td id="name-reserved"></td>
-						<td id="day-reserved"></td>
+						<td id="name-reserved">Joey Gordon</td>
+						<td id="day-reserved">Monday July 10, 2017</td>
+					</tr>
+					<tr>
+						<td id="name-reserved">Bill Bigsby</td>
+						<td id="day-reserved">Tuesday July 11, 2017</td>
 					</tr>
 				</tbody>
 			</table>
@@ -53,9 +58,7 @@
 		<h2>Customer Reviews</h2>
 
 		<div>
-			<div class="image-container">
-				
-			</div>
+			<img class="review-pic" src="images/jerry.jpg" alt="">
 			<div class="reviews-container">
 				<div class="review">
 					<p id="review-text">Big lettuce, big carrots, tomatoes like volleyballs.</p>
